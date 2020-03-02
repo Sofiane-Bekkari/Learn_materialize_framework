@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container" style="border: solid;">
+        <h1 class=" blue white-text center">Learn Materialize Framework</h1>
+
+        <!-- CAROUSEL -->
+        <h3>CARAOUSEL</h3>
+        <div class="carousel">
+            <a href="#one!" class="carousel-item"><img src="img/greece-santorini.png" style="width: 250px;"></a>
+            <a href="#two!" class="carousel-item"><img src="img/nature-Door.jpg" style="width: 250px;"></a>
+            <a href="#three!" class="carousel-item"><img src="img/romiania-standing--1271619.jpg"
+                    style="width: 250px;"></a>
+            <a href="#four!" class="carousel-item"><img src="img/beach-maldive.jpg" style="width: 250px;"></a>
+        </div>
+
+        <!--<div class="carousel"> COPYED FROM DOCUMENTATION!
+                <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                <a class="carousel-item" href="#two!"><img src="img/beach-maldive.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/greece-santorini.png"></a>
+                <a class="carousel-item" href="#four!"><img src="img/nature-Door.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+            </div>-->
+        <h3>Carousel Full Width</h3>
+        <div class="carousel  carousel-slider bottom">
+            <a href="#one!" class="carousel-item"><img src="img/greece-santorini.png"></a>
+            <a href="#two!" class="carousel-item"><img src="img/nature-Door.jpg"></a>
+            <a href="#three!" class="carousel-item"><img src="img/romiania-standing--1271619.jpg"></a>
+            <a href="#four!" class="carousel-item"><img src="img/beach-maldive.jpg"></a>
+        </div>
+
+        <h3>Carousel Full Other Option</h3>
+        <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">I am Fix</a>
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+        <p>End of Carousel</p>
+
+        <!-- COLLAPSIBLE -->
+        <h3>COLLAPSIBLE</h3>
+        <!-- EXPANDABLE & ACCORDION is Default ONE -->
+        <ul class="collapsible expandable">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+        </ul>
+
+        <!--TOAST-->
+        <h3>TOAST</h3>
+        <div>
+            <a onclick="M.toast({html:'You are click me', displayLength: 4000 })" class="btn ">TOAST</a>
+        </div>
+        <h3>TOOLTOPS</h3>
+        <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
+        <a class="btn tooltipped" data-position="top" data-tooltip="I am top tip">Hover me!</a>
+        <a class="btn tooltipped" data-position="right" data-tooltip="I am top tip">Hover me!</a>
+        <a class="btn tooltipped" data-position="left" data-tooltip="I am top tip">Hover me!</a>
+
+        <h3>DROPDOWN</h3>
+        <!-- Dropdown Trigger -->
+        <a class='dropdown-trigger btn' data-target='dropdown1'>Drop Me!</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li><a href="#!">three</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+        </ul>
+
+        <h3>MATERIAL BOX</h3>
+        <!-- MEDIA MATERIAL BOX-->
+        <img class="materialboxed" data-caption="Discover the mother nature" width="100%"
+            src="img/romiania-standing--1271619.jpg" alt="">
+
+        <!--SLIDER CAPTION -->
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/beach-maldive.jpg" alt="">
+                    <div class="caption center-align">
+                        <h2>Center Is Big</h2>
+                        <h5>Say something on what you do!</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/nature-Door.jpg" alt="">
+                    <div class="caption right-align">
+                        <h2>Right Is Big</h2>
+                        <h5>Say something on what you do!</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/romiania-standing--1271619.jpg" alt="">
+                    <div class="caption left-align">
+                        <h2>Left Is Big</h2>
+                        <h5>Say something on what you do!</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MODAL -->
+
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal A</a>
+        <a class="waves-effect waves-light btn modal-trigger blue" href="#modal2">Modal B</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Disgree</a>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text
+                    Lorem ipsum dolor sit amet,
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Est, fugiat consectetur adipisicing elit. Est, fugiat.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Disgree</a>
+            </div>
+        </div>
+
+        <!-- TABS -->
+        <h3>TABS</h3>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                    <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                    <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                    <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                </ul>
+            </div>
+            <div id="test1" class="col s12">Test 1 is take me here!</div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="test4" class="col s12">Test 4</div>
+        </div>
+
+
+        <!-- FEATURE DISCOVERY -->
+        <h3>FEATURE DISCOVERY</h3>
+        <!-- Element Showed -->
+        <a id="menu" class="waves-effect waves-light btn btn-floating" style="bottom: 10px;"><i
+                class="material-icons">menu</i></a>
+
+        <!-- Tap Target Structure -->
+        <div class="tap-target" data-target="menu">
+            <div class="tap-target-content">
+                <h5>Title</h5>
+                <p>A bunch of text</p>
+            </div>
+        </div>
+
+
+
+        <div style="height: 400px;"></div>
+        <!--CONTAINER END-->
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
